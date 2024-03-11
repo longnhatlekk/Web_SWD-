@@ -5,6 +5,7 @@
     padding: 10px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .title {
@@ -13,6 +14,8 @@
 
 .user-icon-container {
     margin-left: auto; /* Dịch chuyển biểu tượng người dùng về bên phải */
+
+    cursor: pointer; /* Thêm dòng này để biểu tượng con trỏ xuất hiện khi trỏ vào biểu tượng người dùng */
 }
 
 .user-icon {
