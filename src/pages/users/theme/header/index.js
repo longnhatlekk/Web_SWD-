@@ -1,9 +1,18 @@
 import { memo } from 'react';
+const headerStyle = {
+    backgroundColor: 'blue',
+    color: 'white',
+    textAlign: 'center',
+    padding: '10px',
+};
 
+const textStyle = {
+    margin: 0,
+};
 const Header = () => {
     return (
-        <div>
-            <h1>Header</h1>
+        <div style={headerStyle}>
+            <h1 style={textStyle}>POS-System</h1>
         </div>
     );
 };
