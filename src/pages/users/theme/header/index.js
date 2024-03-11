@@ -13,9 +13,16 @@ const Header = () => {
         navigate('/order');
     };
 
+    const handleTitleClick = () => {
+        // Điều hướng về trang homepage khi người dùng nhấp vào tiêu đề
+        navigate('/');
+    };
+
     return (
         <div className="header-container">
-            <h1 className="title">POS-System</h1>
+            <h1 className="title" onClick={handleTitleClick}>
+                POS-System
+            </h1>
             <div className="user-icon-container" onClick={handleUserIconClick}>
                 <FontAwesomeIcon icon={faUser} className="user-icon" />
             </div>
