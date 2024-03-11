@@ -1,11 +1,22 @@
-import { memo } from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './HomePage.css';
 
 const HomePage = () => {
+    const navigate = useNavigate();
+
+    const handleStartClick = () => {
+        navigate('/listproduct');
+    };
+
     return (
-        <div>
-            <h1>HomePage</h1>
+        <div className="container">
+            <h1 className="text">Welcome to POS-System</h1>
+            <button className="button" onClick={handleStartClick}>
+                Start
+            </button>
         </div>
     );
 };
 
-export default memo(HomePage);
+export default HomePage;

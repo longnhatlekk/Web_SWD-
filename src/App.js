@@ -8,7 +8,7 @@ function App() {
         <div className="App">
             <Helmet>
                 <meta charSet="utf-8" />
-                <title>Music App</title>
+                <title></title>
                 <link rel="canonical" href="http://mysite.com/example" />
                 <meta name="description" content="Helmet application" />
             </Helmet>
