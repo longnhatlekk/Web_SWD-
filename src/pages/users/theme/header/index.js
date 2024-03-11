@@ -1,18 +1,24 @@
+// Header.js
 import { memo } from 'react';
-const headerStyle = {
-    backgroundColor: 'blue',
-    color: 'white',
-    textAlign: 'center',
-    padding: '10px',
-};
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import './Header.css'; // Import CSS file
 
-const textStyle = {
-    margin: 0,
-};
 const Header = () => {
+    const navigate = useNavigate(); // Sử dụng hook navigate
+
+    const handleUserIconClick = () => {
+        // Điều hướng đến trang /order khi người dùng nhấp vào biểu tượng người dùng
+        navigate('/order');
+    };
+
     return (
-        <div style={headerStyle}>
-            <h1 style={textStyle}>POS-System</h1>
+        <div className="header-container">
+            <h1 className="title">POS-System</h1>
+            <div className="user-icon-container" onClick={handleUserIconClick}>
+                <FontAwesomeIcon icon={faUser} className="user-icon" />
+            </div>
         </div>
     );
 };
