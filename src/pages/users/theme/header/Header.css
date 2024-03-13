@@ -13,9 +13,9 @@
 }
 
 .user-icon-container {
-    margin-left: auto; /* Dịch chuyển biểu tượng người dùng về bên phải */
+    margin-left: auto;
 
-    cursor: pointer; /* Thêm dòng này để biểu tượng con trỏ xuất hiện khi trỏ vào biểu tượng người dùng */
+    cursor: pointer;
 }
 
 .user-icon {
